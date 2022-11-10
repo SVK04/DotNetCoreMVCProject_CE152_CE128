@@ -4,4 +4,26 @@
     ViewData["Title"] = "ShoppingCart";
 }
 
-@Html.Raw(Model.Content)
+
+@*@Html.Raw(Model.Content)*@
+
+@if(Model.Slug=="home")
+{
+   <img src="~/images/geometric-shape-design-circle-frame-style-cyan-color-with-space-vector-illustration-2D6C11D.jpg" width="800" height="400"/>
+}
+
+@if (Model.Slug=="about-us")
+{
+    <h3>    <strong>Developed By:</strong></h3>
+    
+    <p>CE128-Utsav Sheth</p>
+    <p>CE152-Vaibhav Kaul</p>
+          
+
+}
+
+
+
+
+
+

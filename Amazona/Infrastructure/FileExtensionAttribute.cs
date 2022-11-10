@@ -12,8 +12,7 @@ namespace AmazonaShoppingCart.Infrastructure
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            //var context = (CmsShoppingCartContext)validationContext.GetService(typeof(CmsShoppingCartContext));
-
+           
             var file = value as IFormFile;
 
             if (file != null)

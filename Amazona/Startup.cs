@@ -42,10 +42,10 @@ namespace AmazonaShoppingCart
 
             services.AddIdentity<AppUser, IdentityRole>(options => {
                         options.Password.RequiredLength = 5;
-                        options.Password.RequireNonAlphanumeric = false;
-                        options.Password.RequireLowercase = false;
-                        options.Password.RequireUppercase = false;
-                        options.Password.RequireDigit = false;
+                        options.Password.RequireNonAlphanumeric = true;
+                        options.Password.RequireLowercase = true;
+                        options.Password.RequireUppercase = true;
+                        options.Password.RequireDigit = true;
                     })
                     .AddEntityFrameworkStores<ShoppingCart>()
                     .AddDefaultTokenProviders();

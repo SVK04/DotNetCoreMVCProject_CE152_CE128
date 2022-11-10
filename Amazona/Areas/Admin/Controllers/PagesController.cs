@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AmazonaShoppingCart.Areas.Admin.Controllers
 {
-    [Authorize(Roles = "admin,editor")]
+    [Authorize(Roles = "admin")]
     [Area("Admin")]
     public class PagesController : Controller
     {
